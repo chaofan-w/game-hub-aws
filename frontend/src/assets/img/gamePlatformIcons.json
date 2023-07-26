@@ -1,0 +1,203 @@
+[
+  {
+    "id": 4,
+    "name": "PC",
+    "icon": "bi bi-microsoft"
+  },
+  {
+    "id": 171,
+    "name": "Web",
+    "icon": "bi bi-browser-chrome"
+  },
+  {
+    "id": 5,
+    "name": "macOS",
+    "icon": "bi bi-apple"
+  },
+  {
+    "id": 3,
+    "name": "iOS",
+    "icon": "bi bi-apple"
+  },
+  {
+    "id": 6,
+    "name": "Linux",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 21,
+    "name": "Android",
+    "icon": "bi bi-android2"
+  },
+  {
+    "id": 18,
+    "name": "PlayStation 4",
+    "icon": "bi bi-playstation"
+  },
+  {
+    "id": 1,
+    "name": "Xbox One",
+    "icon": "bi bi-xbox"
+  },
+  {
+    "id": 7,
+    "name": "Nintendo Switch",
+    "icon": "bi bi-nintendo-switch"
+  },
+
+  {
+    "id": 16,
+    "name": "PlayStation 3",
+    "icon": "bi bi-playstation"
+  },
+  {
+    "id": 14,
+    "name": "Xbox 360",
+    "icon": "bi bi-xbox"
+  },
+  {
+    "id": 9,
+    "name": "Nintendo DS",
+    "icon": "bi bi-nintendo-switch"
+  },
+  {
+    "id": 11,
+    "name": "Wii",
+    "icon": "bi bi-nintendo-switch"
+  },
+  {
+    "id": 166,
+    "name": "Commodore / Amiga",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 15,
+    "name": "PlayStation 2",
+    "icon": "bi bi-playstation"
+  },
+  {
+    "id": 8,
+    "name": "Nintendo 3DS",
+    "icon": "bi bi-nintendo-switch"
+  },
+  {
+    "id": 27,
+    "name": "PlayStation",
+    "icon": "bi bi-playstation"
+  },
+  {
+    "id": 19,
+    "name": "PS Vita",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 17,
+    "name": "PSP",
+    "icon": "bi bi-playstation"
+  },
+  {
+    "id": 10,
+    "name": "Wii U",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 49,
+    "name": "NES",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 24,
+    "name": "Game Boy Advance",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 79,
+    "name": "SNES",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 187,
+    "name": "PlayStation 5",
+    "icon": "bi bi-playstation"
+  },
+  {
+    "id": 34,
+    "name": "Atari ST",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 167,
+    "name": "Genesis",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 186,
+    "name": "Xbox Series S/X",
+    "icon": "bi bi-xbox"
+  },
+  {
+    "id": 80,
+    "name": "Xbox",
+    "icon": "bi bi-xbox"
+  },
+  {
+    "id": 55,
+    "name": "Classic Macintosh",
+    "icon": "bi bi-command"
+  },
+  {
+    "id": 105,
+    "name": "GameCube",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 26,
+    "name": "Game Boy",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 41,
+    "name": "Apple II",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 43,
+    "name": "Game Boy Color",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 83,
+    "name": "Nintendo 64",
+    "icon": "bi bi-nintendo-switch"
+  },
+  {
+    "id": 106,
+    "name": "Dreamcast",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 107,
+    "name": "SEGA Saturn",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 25,
+    "name": "Atari 8-bit",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 23,
+    "name": "Atari 2600",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 74,
+    "name": "SEGA Master System",
+    "icon": "bi bi-controller"
+  },
+  {
+    "id": 77,
+    "name": "Game Gear",
+    "icon": "bi bi-controller"
+  }
+]

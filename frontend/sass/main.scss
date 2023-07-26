@@ -1,0 +1,97 @@
+//custom variables above the bootstrap import
+$primary: #744baa;
+$secondary: #d83f87;
+$success: #22bd68;
+$info: #b0a5df;
+$warning: #e3d26f;
+$danger: #e04c28;
+$light: #e9e2f3;
+$dark: #4d3271;
+
+$primary-rgb: 116, 75, 170;
+$info-rgb: 176, 165, 223;
+$secondary-rgb: 216, 63, 135;
+$success-rgb: 34, 189, 104;
+$light-rgb: 233, 226, 243;
+$warning-rgb: 227, 210, 111;
+$danger-rgb: 224, 76, 40;
+$dark-rgb: 77, 50, 113;
+
+$card-height: 100%;
+$body-bg: $light;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+
+//custom variables below the bootstrap import
+
+$custom-theme-colors: (
+  "altlight": #f3ebfa,
+  "altGold": #c9a227,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// .list-group-item-hover {
+//   &:hover {
+//     background-color: #c9a227 !important;
+//   }
+// }
+
+.btn-hover-custom {
+  &:hover {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-secondary) !important;
+  }
+}
+
+.bottomNav-btn-hover-custom {
+  &:hover {
+    color: var(--bs-primary) !important;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.custom-slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+.custom-slide-out {
+  animation: slideOut 0.5s ease-in-out;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "./dark.scss";
+@import "../node_modules/bootstrap/scss/_variables-dark";
+
+@include color-mode(dark) {
+  @each $color, $value in $dark-theme-colors {
+    --bs-#{$color}: #{$value};
+    .btn-#{$color} {
+      --bs-btn-bg: var(--bs-#{$color});
+    }
+    @each $color, $value in $dark-theme-colors-rgb {
+      --bs-#{$color}: #{$value};
+    }
+    --bs-body-bg: var(--bs-dark);
+    --bs-body-color: var(--bs-white);
+    --bs-focus-ring-color: var(--bs-white);
+  }
+}
