@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/chaofan-w/gameHub">
-    <img src="./frontend/src/assets/img/gameHub_logo.png" alt="Logo" width="150" height="30">
+    <img src="./frontend/src/assets/img/gamehub_logo.png" alt="Logo" width="150" height="30">
   </a>
 
   <h3 align="center">  
