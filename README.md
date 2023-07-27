@@ -279,7 +279,7 @@ Chaofan Wu
 
 Project Link: [https://github.com/chaofan-w/game-hub-aws](https://github.com/chaofan-w/gameHub)
 
-liveDemo Link: https://my-game-hub.netlify.app/
+liveDemo Link: https://main.dbkfw4i1z5ail.amplifyapp.com/
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
 
