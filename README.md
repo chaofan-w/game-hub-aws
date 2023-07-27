@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/chaofan-w/gameHub">
+  <a href="https://github.com/chaofan-w/game-hub-aws">
     <img src="./frontend/src/assets/img/gamehub_logo.png" alt="Logo" width="150" height="30">
   </a>
 
@@ -11,14 +11,14 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/chaofan-w/gameHub/blob/master/frontend/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/chaofan-w/game-hub-aws/blob/master/frontend/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://my-game-hub.netlify.app/" style="font-weight:800">View Demo Site</a>
+    <a href="https://main.dbkfw4i1z5ail.amplifyapp.com/" style="font-weight:800">View Demo Site</a>
     ·
-    <a href="https://github.com/chaofan-w/gameHub/issues">Report Bug</a>
+    <a href="https://github.com/chaofan-w/game-hub-aws/issues">Report Bug</a>
     ·
-    <a href="https://github.com/chaofan-w/gameHub/issues">Request Feature</a>
+    <a href="https://github.com/chaofan-w/game-hub-aws/issues">Request Feature</a>
   </p>
 </div>
 
@@ -277,7 +277,7 @@ Chaofan Wu
 </br> [![linkedin-shield]][linkedin-url]
 </br> My Portfolio Site: www.chaofanwu.com
 
-Project Link: [https://github.com/chaofan-w/gameHub](https://github.com/chaofan-w/gameHub)
+Project Link: [https://github.com/chaofan-w/game-hub-aws](https://github.com/chaofan-w/gameHub)
 
 liveDemo Link: https://my-game-hub.netlify.app/
 
