@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+const apiurl = import.meta.env.VITE_APP_API_URL;
 const initialState = {
   suggestions: [],
   status: "idle",
@@ -12,7 +12,7 @@ export const fetchSuggestions = createAsyncThunk(
   async ({ page = 1, pageSize = 12, keyword }) => {
     if (!keyword) return { data: [] };
     const response = await axios.get(
-      `/api/games/suggestions/${keyword}?page=${page}&pageSize=${pageSize}`
+      `${apiurl}/api/games/suggestions/${keyword}?page=${page}&pageSize=${pageSize}`
     );
     const { data } = response;
     return data;

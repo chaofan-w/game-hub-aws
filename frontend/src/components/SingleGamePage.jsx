@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import * as React from "react";
 import platformIcons from "../assets/img/gamePlatformIcons.json";
 import axios from "axios";
+const apiurl = import.meta.env.VITE_APP_API_URL;
 import AddToLibraryToggleBtn from "./AddToLibraryToggleBtn";
 import { useSelector, useDispatch } from "react-redux";
 import { selectLoginState } from "../features/login/loginSlice";
@@ -26,7 +27,7 @@ const SingleGamePage = () => {
     let ignore = false;
     const fetchGame = async () => {
       try {
-        const response = await axios.get(`/api/games/${gameId}`, {
+        const response = await axios.get(`${apiurl}/api/games/${gameId}`, {
           timeout: 5000,
         });
         if (!ignore) {

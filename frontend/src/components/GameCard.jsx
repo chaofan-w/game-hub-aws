@@ -9,6 +9,7 @@ import { selectLoginState } from "../features/login/loginSlice";
 import AddToCartToggleBtn from "./AddToCartToggleBtn";
 import { htmlToPlainText } from "../utils";
 import { convertDateFormat } from "../utils";
+const apiurl = import.meta.env.VITE_APP_API_URL;
 
 const GameCard = ({
   game,
@@ -125,7 +126,9 @@ const GameCard = ({
                 }
                 await setGameId(game.id);
                 await setGameDescription("");
-                const response = await axios.get(`/api/games/${game.id}`);
+                const response = await axios.get(
+                  `${apiurl}/api/games/${game.id}`
+                );
                 if (response.data.data.description === "") {
                   setGameDescription("No description available");
                 }

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+const apiurl = import.meta.env.VITE_APP_API_URL;
 const initialState = {
   genres: [],
   status: "idle",
@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export const fetchGenres = createAsyncThunk("genres/fetchGenres", async () => {
-  const response = await axios.get("/api/genres");
+  const response = await axios.get(`${apiurl}/api/genres`);
   return response.data;
 });
 

@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+const apiurl = import.meta.env.VITE_APP_API_URL;
 
 const initialState = {
   token: null,
@@ -11,7 +12,10 @@ export const userLogin = createAsyncThunk(
   "login/userLogin",
   async ({ email, password }, { rejectWithValue }) => {
     try {
-      const response = await axios.post("/api/auth", { email, password });
+      const response = await axios.post(`${apiurl}/api/auth`, {
+        email,
+        password,
+      });
       // here it returns all items from sendResponse(res, 200, token, "User logged in successfully"); which are status, data, message.
       return response.data;
     } catch (err) {

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+const apiurl = import.meta.env.VITE_APP_API_URL;
 
 const initialState = {
   games: [],
@@ -13,7 +14,7 @@ export const fetchGames = createAsyncThunk(
   async ({ page, pageSize, filter = null }) => {
     if (page === 0) return { data: [] };
     const response = await axios.get(
-      `/api/games?page=${page}&pageSize=${pageSize}${
+      `${apiurl}/api/games?page=${page}&pageSize=${pageSize}${
         filter ? "&filter=" + filter : ""
       }`
     );

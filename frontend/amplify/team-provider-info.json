@@ -1,0 +1,23 @@
+{
+  "gamehubaws": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gamehubaws-gamehubaws-194013-authRole",
+      "UnauthRoleArn": "arn:aws:iam::585404917876:role/amplify-gamehubaws-gamehubaws-194013-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::585404917876:role/amplify-gamehubaws-gamehubaws-194013-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-gamehubaws-gamehubaws-194013-deployment",
+      "UnauthRoleName": "amplify-gamehubaws-gamehubaws-194013-unauthRole",
+      "StackName": "amplify-gamehubaws-gamehubaws-194013",
+      "StackId": "arn:aws:cloudformation:us-east-1:585404917876:stack/amplify-gamehubaws-gamehubaws-194013/c5f5ee90-2c0d-11ee-8ab4-0e2646a4feb1",
+      "AmplifyAppId": "dbkfw4i1z5ail"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dbkfw4i1z5ail",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}

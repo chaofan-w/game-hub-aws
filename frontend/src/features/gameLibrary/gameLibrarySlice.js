@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+const apiurl = import.meta.env.VITE_APP_API_URL;
 
 const initialState = {
   libraryGames: [],
@@ -13,7 +14,7 @@ export const fetchGameLibrary = createAsyncThunk(
   async ({ libraryPage, libraryPageSize, token }) => {
     if (libraryPage === 0) return { data: [] };
     const response = await axios.get(
-      `/api/users/gameLibrary?page=${libraryPage}&limit=${libraryPageSize}`,
+      `${apiurl}/api/users/gameLibrary?page=${libraryPage}&limit=${libraryPageSize}`,
       {
         headers: {
           "x-auth-token": token,

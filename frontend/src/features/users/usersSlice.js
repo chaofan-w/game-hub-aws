@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+const apiurl = import.meta.env.VITE_APP_API_URL;
 // import Joi from "joi";
 
 // const validateUser = (user) => {
@@ -25,7 +26,7 @@ export const fetchUser = createAsyncThunk(
   "users/fetchUser",
   async (token, { rejectWithValue }) => {
     try {
-      const response = await axios.get("/api/users/me", {
+      const response = await axios.get(`${apiurl}/api/users/me`, {
         headers: {
           "x-auth-token": token,
         },
@@ -46,12 +47,16 @@ export const updateUser = createAsyncThunk(
     //   return rejectWithValue(error.details[0].message);
     // }
     try {
-      const response = await axios.patch("/api/users/update", updateContent, {
-        headers: {
-          "x-auth-token": token,
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await axios.patch(
+        `${apiurl}/api/users/update`,
+        updateContent,
+        {
+          headers: {
+            "x-auth-token": token,
+            "Content-Type": "application/json",
+          },
+        }
+      );
       return response.data;
     } catch (err) {
       console.log(err); // Log the error for debugging
@@ -69,7 +74,7 @@ export const addRentals = createAsyncThunk(
   async ({ token, gamesInCart }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "/api/rentals/open",
+        `${apiurl}/api/rentals/open`,
         { gamesInCart: gamesInCart },
         {
           headers: {
@@ -94,7 +99,7 @@ export const deleteRentals = createAsyncThunk(
   "users/deleteRentals",
   async ({ token, gamesToDelete }, { rejectWithValue }) => {
     try {
-      const response = await axios.delete("/api/rentals/open", {
+      const response = await axios.delete(`${apiurl}/api/rentals/open`, {
         data: { gamesToDelete: gamesToDelete },
 
         headers: {
@@ -119,11 +124,14 @@ export const automaticCloseRentals = createAsyncThunk(
   "users/automaticCloseRentals",
   async (token, { rejectWithValue }) => {
     try {
-      const response = await axios.delete("/api/rentals/open/automatic", {
-        headers: {
-          "x-auth-token": token,
-        },
-      });
+      const response = await axios.delete(
+        `${apiurl}/api/rentals/open/automatic`,
+        {
+          headers: {
+            "x-auth-token": token,
+          },
+        }
+      );
       return response.data;
     } catch (err) {
       console.log(err); // Log the error for debugging
@@ -140,7 +148,7 @@ export const userRegister = createAsyncThunk(
   "users/userRegister",
   async (user, { rejectWithValue }) => {
     try {
-      const response = await axios.post("/api/users/register", user, {
+      const response = await axios.post(`${apiurl}/api/users/register`, user, {
         headers: {
           "Content-Type": "application/json",
         },
